@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply overflow-hidden bg-cover bg-[url("/background.jpg")] laptop:bg-[url("/background.png")];
+}
+
+.hoverEffect {
+  @apply hover:scale-110 transition-all duration-300;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
